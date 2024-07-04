@@ -25,3 +25,11 @@ Run the following command:
 ```bash
 docker-compose run web python manage.py test
 ```
+
+## Usage
+
+This project has 2 endpoints:
+
+1. `/api/add` - This endpoint receives two numbers and returns the sum of them. It uses Celery to do
+   this operation. Don't forget to pass the numbers in body.
+2. `/api/add/result/task_id` - This endpoint receives a task_id and returns the result of the operation.
